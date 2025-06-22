@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Top-up Mobile Legends</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>Top-up Mobile Legends</h1>
+
+  <label for="user-id">ID Pengguna</label>
+  <input type="text" id="user-id" placeholder="12345678">
+
+  <label for="zone-id">ID Zona</label>
+  <input type="text" id="zone-id" placeholder="(1111)">
+
+  <label for="promo">Kode Promo (opsional)</label>
+  <div class="promo-row">
+    <input type="text" id="promo" placeholder="Masukkan kode promo">
+    <button type="button">Gunakan</button>
+  </div>
+
+  <label for="nominal">Pilih Nominal</label>
+  <div class="grid" id="nominal-grid">
+    <button type="button" data-value="5">5 Diamond</button>
+    <button type="button" data-value="12">12 Diamond</button>
+    <button type="button" data-value="19">19 Diamond</button>
+    <button type="button" data-value="28">28 Diamond</button>
+    <button type="button" data-value="36">36 Diamond</button>
+    <button type="button" data-value="85">85 Diamond</button>
+  </div>
+
+  <label for="payment">Metode Pembayaran</label>
+  <select id="payment">
+    <option value="">Pilih metode</option>
+    <option>QRIS</option>
+    <option>Transfer Bank</option>
+    <option>OVO/Gopay/Dana</option>
+  </select>
+
+  <label for="whatsapp">Nomor WhatsApp</label>
+  <input type="text" id="whatsapp" placeholder="+62xxxxxxxxxx">
+
+  <div class="submit-btn">
+    <button type="button" onclick="submitTopup()">Pesan Sekarang</button>
+  </div>
+</div>
+
+<script>
+  let selectedNominal = null;
+  document.querySelectorAll("#nominal-grid button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      selectedNominal = btn.dataset.value;
+      document.querySelectorAll("#nominal-grid button").forEach(b => b.style.opacity = '0.6');
+      btn.style.opacity = '1';
+    });
+  });
+
+  function submitTopup(){
+    const data = {
+      userId: document.getElementById("user-id").value.trim(),
+      zoneId: document.getElementById("zone-id").value.trim(),
+      promo: document.getElementById("promo").value.trim(),
+      nominal: selectedNominal,
+      payment: document.getElementById("payment").value,
+      whatsapp: document.getElementById("whatsapp").value.trim()
+    };
+    console.log("Submit top-up: ", data);
+    alert("Top-up dikirim! Selamat anda kena prank.");
+  }
+</script>
+
+</body>
+</html>

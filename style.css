@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.Navbar{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 15px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar .Navbar-logo h1{
+    font-size: 35px;
+    color: rgb(243, 6, 6);
+}
+.Navbar .Navbar-logo .tec  {
+    color: rgb(69, 0, 130);
+}
+.Navbar ul{
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+.Navbar ul li {
+    position: relative;
+}
+.Navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s ease;
+}
+.Navbar ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 5px;
+    background-color: aqua;
+    transition: 0.3s ease;
+}
+.Navbar ul li a:hover {
+    color: rgb(0, 102, 146);
+}
+
+/* css home */
+.Home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('benedetta.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Home .isi{
+    padding: 1.4rem 7%;
+    max-width: 50rem;
+}
+.isi a {
+    text-decoration: none;
+}
+.isi .h1{
+    margin-top: 1rem;
+    font-size: 45px;
+    color: white;
+}
+.isi p{
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+}
+.isi .cta{
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(138, 1, 1, 0.852);
+    border-radius: 0.2rem;
+}
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.login {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #4b6cb7;
+    background-color: #f0f4ff;
+}
+
+.lupa-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.lupa-pass a {
+    color: #4b6cb7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lupa-pass a:hover {
+    text-decoration: underline;
+}
+
+.tombol {
+    width: 100%;
+    padding: 12px;
+    background-color: #4b6cb7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tombol:hover {
+    background-color: #3d59a1;
+}
+
+.link-daftar {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.link-daftar a {
+    color: #4b6cb7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-daftar a:hover {
+    text-decoration: underline;
+}
+/* style.css - Tema gelap gaming */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('benedetta.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: black;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.navbar .menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .menu a:hover {
+    color: #ff0000;
+}
+
+/* Wrapper form */
+.wrapper {
+    max-width: 400px;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.input-box input::placeholder {
+    color: #ccc;
+}
+
+.tombol {
+    width: 100%;
+    padding: 10px;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background-color: #b30000;
+}
+
+.link-daftar,
+.lupa-pass {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.link-daftar a,
+.lupa-pass a {
+    color: #ffccff;
+    text-decoration: none;
+}
+.link-daftar p a{
+    color: #FFFADC;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+
+.container {
+  max-width: 480px;
+  margin: 2rem auto;
+  background:transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #E03E2D;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin: .75rem 0 .25rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+
+.grid button {
+  padding: .7rem;
+  border: none;
+  background: #E03E2D;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .3s;
+  opacity: 0.6;
+}
+
+.grid button:hover {
+  background: #800f00;
+}
+
+.promo-row {
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.promo-row input {
+  flex: 1;
+  margin-right: .5rem;
+}
+
+.promo-row button {
+  padding: .5rem .75rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.promo-row button:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.submit-btn button {
+  width: 100%;
+  padding: .75rem;
+  font-size: 1rem;
+  background: #28A745;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.submit-btn button:hover {
+  background: #1e7e34;}
